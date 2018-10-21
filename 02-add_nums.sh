@@ -1,8 +1,9 @@
 #!/bin/sh
 
-echo "Enter the width of picture"
+echo "Enter the width of image"
 read first
-echo "Enter the height of picture"
+
+echo "Enter the height of image"
 read second
 total=$(( first*second ))
 
