@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "Enter the width of image."
+echo "Enter the width of  the image."
 read first
-echo "Enter the height of image."
+echo "Enter the height of the image."
 read second
 
 
