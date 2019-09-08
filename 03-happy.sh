@@ -14,9 +14,3 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
-
-if [ $(date +%a) == "Sun" -o $(date +%a) == "Sat" ] ; then
-   echo "It is the weekend!!"
-else 
-   echo "It is the weekday :("
-fi
