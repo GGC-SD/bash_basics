@@ -4,9 +4,9 @@ echo "You are happy?"
 read answer
 
 if [ "$answer" = "yes" ]; then
-   echo "Then it is the weekend."
+   echo "It could be the weekend."
 else
-   echo "Then it isn't the weekend."
+   echo "It probably isn't the weekend."
 fi
 
 # here are the other string comparison operators
