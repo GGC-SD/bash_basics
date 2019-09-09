@@ -33,7 +33,7 @@ while[ $count -ge 0 ]; do
     echo "And a partridge in a pear tree!"
   fi
   
-  ((count1 = count1 - 1))   
+  (($count = $count - 1))   
 
 done 
 
