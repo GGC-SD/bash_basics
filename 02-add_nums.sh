@@ -14,11 +14,9 @@ echo "The sum is $sum"
 # exercise: ask the user for the width and height and present total
 # number of pixels
 
-echo "Enter width of image"
-read width
-echo "Enter height of image"
-read height
-
-totalPixels=$(( width * height ))
-
-echo "The total number of pixels is $totalPixels"
+echo "Enter img width"
+read w
+echo "Enter img height"
+read h
+totalPixels=$(( w * h ))
+echo "There are "$total" pixels"

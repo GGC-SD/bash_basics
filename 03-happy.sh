@@ -14,3 +14,12 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+
+today=$(echo `date` | cut -f1 -d',' | grep -E 'Mon|Tue')
+
+if [ "$today" = 'Sat' ] || [ "$today" = 'Sun' ]
+then
+    echo "Today is $today""day. A weekend! :)"
+else
+    echo "Today is $today""day. Not a weekend... :("
+fi
