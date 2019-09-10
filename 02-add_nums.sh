@@ -18,5 +18,5 @@ echo "Enter img width"
 read w
 echo "Enter img height"
 read h
-totalPixels=$(( w * h ))
+total=$(( w * h ))
 echo "There are "$total" pixels"
