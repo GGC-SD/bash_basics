@@ -22,3 +22,23 @@ done
 
 # exercise: implement another counting song (such as 12 days of Christmas) 
 # using loops and if statements.
+echo "Lets sing the 12 days of Christmas for Shell commands!" 
+echo "What day do you want to start on?"
+read day
+
+while [ $day -ge 0 ]; do
+	if [ $day -gt 12 ]; then
+		echo "Thats to high, lets start at 12."
+		((day = 13))
+	elif [ $day -ge 2 ]; then
+		echo "On the $day day of Shellmas, Gunay gave to me!"
+		echo "$day shell commands!"
+	elif [ $day -eq 1 ]; then
+		echo "On the $day day of Shellmas, Gunay gave to me!"
+		echo "$day shell commands!"
+	else 
+		echo "Thats the 12 days of Shellmas!"
+	fi
+	((day = day -1))
+	
+done
