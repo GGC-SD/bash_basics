@@ -12,6 +12,7 @@ fi
 echo "Please enter what day is it"
 read answer
 
+
 if [ "$answer" == "Sunday" ]||[ "$answer" == "Saturday" ]; then
 echo "Its the Weekend!"
 else
