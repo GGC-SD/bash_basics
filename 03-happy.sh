@@ -9,6 +9,15 @@ else
    echo "Still Smile :)"
 fi
 
+echo "Please enter what day is it"
+read answer
+
+if [ "$answer" == "Sunday" ]||[ "$answer" == "Saturday" ]; then
+echo "Its the Weekend!"
+else
+echo "Its not the Weekend"
+fi
+
 # here are the other string comparison operators
 # != , -n (not an empty string) , -z (an empty string)
 
