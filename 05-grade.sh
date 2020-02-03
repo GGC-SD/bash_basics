@@ -1,4 +1,4 @@
-#!/bin/sh
+i#!/bin/sh
 
 
 echo "What did you get in the first ITEC 3860 test?"
@@ -21,19 +21,15 @@ fi
 # everything else
 
 
-
 echo "What's the temperature outside?"
-echo "Please give a numeric value in Farenheit"
+echo "Provide a temperature in Farenheit"
 read temperature
 
-if [$temperature -lt 40] 
-then
+if [$temperature -lt 40]; then
 	echo "it's cold"
-elif [$temperature -lt 60] 
-then
+elif [[$temperature -lt 60 && $temperature -gt 39]]; then
 	echo "it's chilly"
-elif [$temperature -lt 70]
-then
+elif [[$temperature -lt 70 && $temperature -gt 59]]; then
 	echo "it's okay"
 else
 	echo "it's hot"
