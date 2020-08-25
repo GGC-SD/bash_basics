@@ -2,10 +2,10 @@
 
 # look up ip addresses of various search engines
 
-servers="yahoo.com google.com dogpile.com wolframalpha.com"
+servers="wikipedia.org microsoft.com amazon.com"
 
 for server in $servers; do
-    nslookup $server
+	ping $server
     echo "----------------------------"
 done
 
