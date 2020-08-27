@@ -19,8 +19,8 @@ echo
 echo "What day is today?"
 read answer
 
-if [ "$answer" = "Saturday" ] || [ "$answer" = "Sunday" ]; then
-	echo "Today is a weekend!"
+if [ "$answer" = "Saturday" ] || [ "$answer" = "saturday" ] || [ "$answer" = "Sunday" ] || [ "$answer" = "sunday" ]; then
+   echo "Today is a weekend!"
 else
-	echo "Today is not a weekend!"
+   echo "Today is not a weekend!"
 fi
