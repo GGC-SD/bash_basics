@@ -19,3 +19,18 @@ fi
 # that prints "it's cold" if the temperature is < 40
 # it's chilly if < 60, it's okay if < 70 and, it's hot for 
 # everything else
+
+echo "What is the temperature"
+echo "Please give a numeric answer"
+read temperature
+
+if [ $temperature -le 40 ]; then
+	echo "It's cold"
+elif [ $temperature -le 60 ]; then
+		echo "It's chilly"
+elif [ $temperature -le 70 ]; then
+		echo "It's okay"
+else 
+		echo "It's hot for everything else"
+fi
+		
