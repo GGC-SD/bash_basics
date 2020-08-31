@@ -15,11 +15,11 @@ echo "The sum is $sum"
 # number of pixels
 
 echo
-echo "Enter the width of the pixels"
+echo "Enter width of pixels"
 read width
-echo "Enter the height of the pixels"
+echo "Enter height of pixels"
 read height
 
-num=$(( width*height ))
+pixels=$(( width*height ))
 
-echo "There are $num pixels"
+echo "There are $pixels pixels"
