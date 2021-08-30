@@ -1,7 +1,7 @@
 time = `date +%H`
 
 if [ $time -lt 12 ]; then
-	echo "Good Morning!"
+	echo "Good Morning Neighbor !"
 else
 	echo "It is not morning!!"
 fi
