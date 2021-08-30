@@ -6,6 +6,9 @@ else
 	echo "It is not morning!!"
 fi
 
+
+
+
  
 echo "What is the meaning of life?"
 read meaning
