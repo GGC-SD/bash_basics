@@ -5,10 +5,6 @@ if [ $time -lt 12 ]; then
 else
 	echo "It is not morning!!"
 fi
-
-
-
-
  
 echo "What is the meaning of life?"
 read meaning
