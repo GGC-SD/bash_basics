@@ -1,9 +1,9 @@
 #!/bin/bash
 
-
-declare -i x=5
+echo "Miranda"
+echo "It's a lovely day in the neighborhood"
 
 for i in 1 2 3 4 5
 do
-	echo "Miranda"
+	echo "Hello World!"
 done
