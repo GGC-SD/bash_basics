@@ -4,7 +4,7 @@ echo "Welcome to Dr. Anca Doloc-Mihu's Software Development II class."
 echo ""
 echo "Here is my half pyramid."
 echo ""
-for outerStar in {1..10}
+for outerStar in {1..6}
 do
     while [ $outerStar -gt 0 ]
     do
