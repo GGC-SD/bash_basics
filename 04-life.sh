@@ -3,6 +3,7 @@ echo "What is the meaning of life?"
 read meaning
 
 
+
 if [ "$meaning" -ne 42 ]; then
    echo "Yes!, That is the meaning of life!"
 else
