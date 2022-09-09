@@ -15,10 +15,10 @@ fi
 # exercise: write a script that prints whether today is
 # the weekend or not
 
-echo "Let us see if it is the weekend..."
+echo "Determining if it is the weekend or not..."
 
 if [ $(date +%u) -gt 5 ]; then
-   echo "It is the weekend, hooray!"
+   echo "It is the weekend, nice!"
 else
-   echo "It is not the weekend. -_-"
+   echo "Unfortunately, it is not the weekend. :("
 fi
