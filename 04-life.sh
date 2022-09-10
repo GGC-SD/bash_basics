@@ -14,3 +14,6 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+
+if [ `date +%P` = "am" ]; then echo 'It's morning time!'; else echo 'Morning time over.'; fi
+
