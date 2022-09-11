@@ -14,3 +14,22 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+echo "What is today?"
+read day
+case "$day" in
+	monday | tuesday | wednesday | thursday | friday)
+		echo "It is not the weekend"
+		;;
+		
+	saturday | sunday)
+		echo "It's the weekend!!"
+		;;
+	
+	Monday | Tuesday | Wednesday | Thursday | Friday)
+		echo "It is not the weekend"
+		;;
+	
+	Saturday | Sunday)
+		echo "It's the weekend!!"
+		;;
+esac
