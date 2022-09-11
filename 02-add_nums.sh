@@ -45,4 +45,4 @@ read num3
 echo "Enter the fourth number..."
 read num4
 product=$(( $num1 * $num2 * $num3 * $num4 ))
-echo "The product is ${product}..."
+echo "The product of the 4 numbers is ${product}..."
