@@ -14,3 +14,13 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+
+echo "pick a number between 1 and 9"
+read number
+
+if ["$number" -eq 5]; then
+	echo "so its 5"
+else 
+	echo "so its not 5"	;
+fi
+	
