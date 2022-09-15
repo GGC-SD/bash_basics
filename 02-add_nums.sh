@@ -33,3 +33,12 @@ read height
 echo ""
 pixelTotal=$(( $width * $height ))
 echo "Your display has ${pixelTotal} pixels." 
+
+# ian was here again
+
+echo "Please enter the (h)eight"
+read height
+echo "Please enter the (w)idth"
+read width
+
+totalPixels=$(( height*width ))
