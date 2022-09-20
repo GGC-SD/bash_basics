@@ -14,3 +14,12 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+
+dayName=`date +%a | tr '[:lower:]' '[:upper:]'`
+
+if [ $dayName = "SAT" -o $dayName = "SUN" ]
+then
+    echo "WEEKEND"
+else
+    echo "It is not the weekend!"
+fi
