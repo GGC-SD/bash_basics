@@ -19,7 +19,7 @@ dayName=`date +%a | tr '[:lower:]' '[:upper:]'`
 
 if [ $dayName = "SAT" -o $dayName = "SUN" ]
 then
-    echo "WEEKEND"
+ echo "It's the weekend!"
 else
-    echo "It is not the weekend!"
+    echo "It's not the weekend!"
 fi
