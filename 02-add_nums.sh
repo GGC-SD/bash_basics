@@ -34,19 +34,20 @@ echo ""
 pixelTotal=$(( $width * $height ))
 echo "Your display has ${pixelTotal} pixels." 
 
-# finding the slope between two points
+# find the slope between two points
 
 echo ""
-echo "Enter the x-coordinate for the first point."
+echo "Enter the x-coordinate for the 1st point: "
 read x1
-echo "Enter the y-coordinate for the first point."
+echo "Enter the y-coordinate for the 1st point: "
 read y1
-echo "Enter the x-coordinate for the second point."
+echo "Enter the x-coordinate for the 2nd point: "
 read x2
-echo "Enter the y-coordinate for the second point."
+echo "Enter the y-coordinate for the 2nd point: "
 read y2
-let numerator=$y2-$y1
-let denominator=$x2-$x1
-let slope=$numerator/$denominator
+
+let numert=$y2-$y1
+let denomt=$x2-$x1
+let slope=$numert/$denomt
 
 echo "The slope between the two points is $slope."
