@@ -33,3 +33,16 @@ read height
 echo ""
 pixelTotal=$(( $width * $height ))
 echo "Your display has ${pixelTotal} pixels." 
+
+#exercise: ask the user for the x and y coordinates of two vectors and find the slope between them
+
+echo "What is the x-coordinate of the first Vector?"
+read x1
+echo "What is the y-coordinate of the first Vector?"
+read y1
+echo "What is the x-coordinate of the second Vector?"
+read x2
+echo "What is the y-coordinate of the second Vector?"
+read y2
+slope=$((($y2-$y1)/($x2-$x1)))
+echo "The slope between the two vectors is $slope."
