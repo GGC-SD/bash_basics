@@ -4,18 +4,12 @@
 echo "Hello! My name is Roberto Alvarado"
 read name
 echo "Welcome, Roberto Alvarado"
+echo "Supercars are my thing. What is your favorite car brand?"
+Lamborghini = "Lamborghini"
+read answer
 
-# single quotes prevent the expansion of the variable
-echo 'Your name was stored in $name'
-
-# exercise: write a script that asks the user for a 
-# filename and create an empty file named after it
-
-echo "Hey $name, What is your filename?"
-read filename
-echo "You want $filename"
-echo "Creating $filename ..."
-touch $filename
-echo "$filename creted"
-ls
-echo "Bye,bye"
+if [["$answer" == "$Lamborghini"]]
+then
+	echo "What is your favorite model?"
+else
+	echo "What brand is your favorite?"
