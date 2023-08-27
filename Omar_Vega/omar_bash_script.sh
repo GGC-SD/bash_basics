@@ -21,6 +21,6 @@ else
 
 if[["$answer" == "$food"]]
 then
-  echo "Yes I am food"
+  echo "Yes I am a foodie, I enjoy eating food."
 else
   echo "No I'm not interested in that, try again."
