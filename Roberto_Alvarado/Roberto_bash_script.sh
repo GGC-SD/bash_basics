@@ -6,7 +6,7 @@ echo "Supercars are my thing."
 
 for (( counter=24; counter>15; counter--))
 do
-    sleep 5s
-    echo -n "$counter "
+sleep 5s
+echo -n "$counter "
 done
-    printf "\n"
+printf "\n"
