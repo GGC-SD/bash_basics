@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "You are happy?"
-read answer
+read Yes I am happy. 
 
 if [ "$answer" = "yes" ]; then
    echo "Smile :)"
