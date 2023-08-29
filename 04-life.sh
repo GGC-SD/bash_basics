@@ -1,6 +1,6 @@
 
 echo "What is the meaning of life?"
-read "The meaning of life is to have a purpose that motivates you to doing things you want to do."
+read "Life is Meaning less. XD"
 
 
 if [ "$meaning" -eq 42 ]; then
