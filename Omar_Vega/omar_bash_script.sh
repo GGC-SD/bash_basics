@@ -5,6 +5,7 @@ echo "I have a whole bunch of interests, can you guess some of them?"
 anime = "Anime"
 games = "Video Games"
 food = "Food"
+travel = "Travel
 read answer
 
 if[["$answer" == "$anime"]]
@@ -22,5 +23,11 @@ else
 if[["$answer" == "$food"]]
 then
   echo "Yes I am a foodie, I enjoy eating food."
+else
+  echo "No I'm not interested in that, try again."
+
+if[["$answer" == "$travel"]]
+then
+  echo "Yes I like to travel a lot."
 else
   echo "No I'm not interested in that, try again."
