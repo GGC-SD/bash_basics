@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "You are happy?"
-read "I am happy, I have a positive mental attitude."
+read "I am happy, very very happy."
 
 if [ "$answer" = "yes" ]; then
    echo "Smile :)"
