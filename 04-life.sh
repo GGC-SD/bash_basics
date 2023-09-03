@@ -14,3 +14,11 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+#
+hour=$(date +%H)
+if [ $hour -lt 12 ] && [ $hour -gt 4 ]
+then
+		echo "It's morning!"
+else
+		echo "It's not morning. :("
+fi
