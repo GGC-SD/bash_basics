@@ -27,7 +27,7 @@ if [ "$temperature" -lt 40 ]; then
 elif [ "$temperature" -lt 60 ]; then
   echo "It's chilly today."
 elif [ "$temperature" -lt 70 ]; then
-  echo "It's okay."
+  echo "It's okay outside :)."
 else
   echo "It's hot today."
 fi
