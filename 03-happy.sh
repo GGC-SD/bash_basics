@@ -14,6 +14,7 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+echo "svilleda branch"
 if [[ $(date +%u) -gt 5 ]] 
 then
    echo "It's the weekend"
