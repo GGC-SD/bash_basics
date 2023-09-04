@@ -14,3 +14,12 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+
+now=$(date +'%H')
+if [ "$now" -ge 0 -a "$now" -le 11 ]; then
+   echo "It is morning."
+   
+else
+   echo "It is not morning."
+fi
+read pause
