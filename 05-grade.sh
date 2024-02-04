@@ -22,14 +22,17 @@ fi
 
 
 
-temperature=$(weather -t | grep "Temperature" | awk '{print $2}')
+# Fetch the current temperature using weather-util
+temperature=$(weather -t | awk '/Temperature/{print $2}')
 
-if [[ $temperature -lt 40 ]]; then
+# Display a message based on the temperature
+if ((temperature < 40)); then
     echo "It's cold"
-elif [[ $temperature -lt 60 ]]; then
+elif ((temperature < 60)); then
     echo "It's chilly"
-elif [[ $temperature -lt 70 ]]; then
+elif ((temperature < 70)); then
     echo "It's okay"
 else
     echo "It's hot"
 fi
+
