@@ -22,10 +22,9 @@ fi
 
 
 
-# Fetch the current temperature using weather-util
 temperature=$(weather -t | awk '/Temperature/{print $2}')
 
-# Display a message based on the temperature
+
 if ((temperature < 40)); then
     echo "It's cold"
 elif ((temperature < 60)); then
