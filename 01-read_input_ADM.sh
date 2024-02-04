@@ -11,11 +11,7 @@ echo 'Your name was stored in $name'
 # exercise: write a script that asks the user for a 
 # filename and create an empty file named after it
 
-echo "Hey $name, What is your filename?"
+echo "$name, please provide a file name and I will build you a new text file: "
 read filename
-echo "You want $filename"
-echo "Creating $filename ..."
-touch $filename
-echo "$filename creted"
-ls
-echo "Bye,bye"
+touch $filename.txt
+echo "$filename.txt created"
