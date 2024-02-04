@@ -19,3 +19,17 @@ fi
 # that prints "it's cold" if the temperature is < 40
 # it's chilly if < 60, it's okay if < 70 and, it's hot for 
 # everything else
+
+
+
+temperature=$(weather -t | grep "Temperature" | awk '{print $2}')
+
+if [[ $temperature -lt 40 ]]; then
+    echo "It's cold"
+elif [[ $temperature -lt 60 ]]; then
+    echo "It's chilly"
+elif [[ $temperature -lt 70 ]]; then
+    echo "It's okay"
+else
+    echo "It's hot"
+fi
