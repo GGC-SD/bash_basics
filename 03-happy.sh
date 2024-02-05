@@ -17,8 +17,8 @@ fi
 # Get the current day of the week (1 for Monday, 2 for Tuesday, ..., 7 for Sunday)
 day=$(date +%u)
 
-# Check if the current day is either Saturday (6) or Sunday (7)
-if [ "$day" -eq 6 ] || [ "$day" -eq 7 ]; then
+# Check if the current day is a weekend day (Saturday or Sunday)
+if [ "$day" -eq 6 -o "$day" -eq 7 ]; then
    echo "Today is the weekend! Time to relax :)"
 else
    echo "Today is a weekday. Keep working or have fun anyway!"
