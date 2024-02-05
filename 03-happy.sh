@@ -15,7 +15,7 @@ fi
 # exercise: write a script that prints whether today is
 # the weekend or not
 if [ $(date +%u) -gt 5 ]; then
-    echo "Today is the weekend."
+    echo "Today is the weekend. =)"
 else
-    echo "Today is not the weekend."
+    echo "Today is not the weekend. =("
 fi
