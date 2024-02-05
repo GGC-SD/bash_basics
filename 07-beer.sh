@@ -43,3 +43,61 @@ while [ $count -ge 0 ]; do
 	((count = count - 1))
 	
 done
+
+
+echo "Now we sing the 12 Days of Vacation"
+count=12
+
+while [ $count -ge 0 ]; do
+    if [ $count -gt 1 ]; then
+        echo "On the $count day of vacation, my true love gave to me"
+    elif [ $count -eq 1 ]; then
+        echo "On the $countst day of vacation, my true love gave to me"
+    else
+        echo "No more vacation days left!"
+    fi
+
+    case $count in
+        12)
+            echo "Twelve sandy beaches,"
+            ;;
+        11)
+            echo "Eleven ice cream cones,"
+            ;;
+        10)
+            echo "Ten sunny skies,"
+            ;;
+        9)
+            echo "Nine surfboards,"
+            ;;
+        8)
+            echo "Eight seashells,"
+            ;;
+        7)
+            echo "Seven tropical drinks,"
+            ;;
+        6)
+            echo "Six hammocks swinging,"
+            ;;
+        5)
+            echo "Five snorkel masks,"
+            ;;
+        4)
+            echo "Four seagulls flying,"
+            ;;
+        3)
+            echo "Three sandcastles,"
+            ;;
+        2)
+            echo "Two sunsets,"
+            ;;
+        1)
+            echo "And a parrot in a palm tree!"
+            ;;
+        *)
+            echo "No more vacation days left!"
+            ;;
+    esac
+    
+    ((count = count - 1))
+done
