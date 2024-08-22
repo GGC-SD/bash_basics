@@ -14,11 +14,12 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
-day=$(date +%u)
-echo "Current date: $day"
 
-if [ "$day" -eq 6 ] || [ "$day" -eq 7 ]; then
-    echo "It's the weekend! Enjoy :)"
+dateOfWeek=$(date +%u)
+echo "Current date: $dateOfWeek"
+
+if [ "$dateOfWeek" -eq 6 ] || [ "$dateOfWeek" -eq 7 ]; then
+    echo "Enjoy your weekend! :)"
 else
-    echo "It's a weekday. Keep pushing!"
+    echo "Enjoy your weekday! :)"
 fi
