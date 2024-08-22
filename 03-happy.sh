@@ -18,9 +18,9 @@ echo "Is today the weekend?"
 read response
 
 if [ "$response" = "yes" ]; then
-   echo "Awesome!"
+   echo "WOHOOO!"
 else
-   echo "You're almost there :)"
+   echo ":'("
 fi
 
 #read -p "Press [Enter] key to continue..."
