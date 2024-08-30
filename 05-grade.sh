@@ -19,7 +19,6 @@ fi
 # everything else
 
 echo "What is the temperature?"
-
 read temperature
 
 if [ $temperature -le 40 ]; then
