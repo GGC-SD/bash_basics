@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "What did you get in the first ITEC 3860 test?"
 echo "Please give a numeric answer"
 read grade
@@ -20,6 +19,7 @@ fi
 # everything else
 
 echo "What is the temperature?"
+
 read temperature
 
 if [ $temperature -le 40 ]; then
