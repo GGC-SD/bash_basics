@@ -1,12 +1,17 @@
 #!/bin/bash
 # read the name of the user and print hello
+echo "Hello Connor Griffin, welcome to bash"
 
-echo "Hello Connor Griffin, What is your name"
-read name
-echo "Welcome, $name"
+echo "You are doing great! -Katerine"
 
-# single quotes prevent the expansion of the variable
-echo 'Your name was stored in $name'
+echo "Guess a number bewteen 1-10"
+read number
 
-# exercise: write a script that asks the user for a 
-# filename and create an empty file named after it
+while [ $number -ne 7 ]
+do
+    echo "Incorrect, please chose again"
+    read number
+done
+echo "Correct!"
+
+
