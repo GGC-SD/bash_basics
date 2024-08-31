@@ -15,12 +15,14 @@ fi
 # exercise: write a script that prints whether today is
 # the weekend or not
 
-echo "Enter a day PLEASE"
+echo "What day of the week is it today?"
 read today
 echo "You said today is $today"
-if [ "$today" != "saturday" -a "$today" != "sunday" ]; then
-   echo "Terrible news: It is a weekday"
+if [ "$today" = "saturday" ]; then
+   echo "It is the first day of the weekend!"
+elif [ "$today" = "sunday" ]; then 
+   echo "Terrible news... Tommorrow is monday :("
 else 
-   echo "Have fun on your days off!!!!!!!!!!!!!!!!!"
+   echo "Keep going the weekend will come soon!"
 fi
 
