@@ -16,10 +16,11 @@ fi
 # the weekend or not
 
 echo "What day of the week is it today?"
-read day
+read today
 
-if [ "$day" = "saturday" -o "$day" = "sunday" ]; then 
-   echo "Today is the weekend!!!"
-else 
+if ["$today" != "saturday" -o "$today" != "sunday"]; then
    echo "Today is not the weekend."
+else 
+   echo "Today is the weekend!!"
 fi
+
