@@ -17,8 +17,9 @@ fi
 
 echo "What day of the week is it today?"
 read today
+echo "You said today is $today"
 
-if ["$today" != "saturday" -o "$today" != "sunday"]; then
+if [ "$today" != "saturday" -a "$today" != "sunday" ]; then
    echo "Today is not the weekend."
 else 
    echo "Today is the weekend!!"
