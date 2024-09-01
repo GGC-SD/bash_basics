@@ -5,7 +5,7 @@
 # true and false are also Unix commands
 while [ true ]; do
 nslookup "google.com"
-echo "Press Press Control + C to stop"
+echo "Press CTRL+C to stop"
 sleep 1 || break
 done
 
