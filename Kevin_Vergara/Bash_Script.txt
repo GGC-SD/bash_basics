@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Kevin Vergara"
+echo "Hello, Dr. Anca and others :)."
+echo ""
+for (( i=1; i<=3; i++ ))
+do
+    for (( j=1; j<=3+i-1; j++ ))
+    do
+        if (( j <= 3-i )); then
+            echo -n " "
+        else
+            echo -n "$"
+        fi
+    done
+    echo ""
+done
