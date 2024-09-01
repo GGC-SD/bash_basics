@@ -4,7 +4,9 @@
 # while loop has, while-do-done
 # true and false are also Unix commands
 while [ true ]; do
-  echo "infinite number of beer on the wall"
+nslookup "amazon.com"
+echo "Press CTRL+C to stop"
+sleep 1 || break
 done
 
 # exercise: write a script that continues to look up
