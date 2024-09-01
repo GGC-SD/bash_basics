@@ -14,3 +14,11 @@ fi
 
 # exercise: write a script that prints whether today is
 # the weekend or not
+echo "What day is it?"
+read day
+
+if ["$day" = "saturday"] || ["$day" = "sunday"]; then
+   echo "It'll be a lovely day!"
+else
+   echo "Well, darn..."
+fi
