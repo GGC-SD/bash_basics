@@ -1,12 +1,12 @@
 #!/bin/sh
 
-echo "Are you happy?"
+echo "You are happy?"
 read answer
 
 if [ "$answer" = "yes" ]; then
-   echo "Good be happy"
+   echo "Smile :)"
 else
-   echo "That is so sad you said $answer :( "
+   echo "Still Smile :)"
 fi
 
 # here are the other string comparison operators
@@ -18,11 +18,10 @@ fi
 echo "What day of the week is it today?"
 read today
 echo "You said today is $today"
-if [ "$today" = "saturday" ]; then
-   echo "It is the first day of the weekend!"
-elif [ "$today" = "sunday" ]; then 
-   echo "Terrible news... Tommorrow is monday :("
+
+if [ "$today" != "saturday" -a "$today" != "sunday" ]; then
+   echo "Today is not the weekend."
 else 
-   echo "Keep going the weekend will come soon!"
+   echo "Today is the weekend!!"
 fi
 
