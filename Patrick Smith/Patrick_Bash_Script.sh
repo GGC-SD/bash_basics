@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Hello, my name is Patrick Smith."
 echo "You are looking fabulous today!"
 
