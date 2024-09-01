@@ -29,6 +29,6 @@ elif [ $temperature -le 60 ]; then
    echo "It's chilly."
 elif [ $temperature -le 70 ]; then
    echo "It's okay."
-else 
+else
    echo "It's hot."
 fi
