@@ -7,7 +7,6 @@ while [ true ]; do
 nslookup "google.com"
 echo "Press Press Control + C to stop"
 sleep 1 || break
-rea
 done
 
 # exercise: write a script that continues to look up
