@@ -4,41 +4,41 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+   read -p "What is your favorite day of the week? (q to end) > " day
 
-case $note in
+case $day in
    # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
-      ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+   Monday|monday)
+      echo "Welp, here's to Monday."
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   Tuesday|tuesday)
+      echo "To push through, to not push through? That is the Tuesday question."
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   Wednesday|wednesday)
+      echo "Its Hump Day, but I'm still sleepy!"
       ;;
-   so|So)
-      echo "So a note that follows fa"
+   Thursday|thursday)
+      echo "We're almost there!"
       ;;
-   la|La)
-      echo "La a note that follow so"
+   Friday|friday)
+      echo "Friday is finally here! Clock out time!"
       ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
+   Saturday|saturday)
+      echo "It's Saturday! Brunch anyone?"
+      ;;
+   Sunday|sunday)
+      echo "The Lord's Day. Amen."
       ;;
    q)
-      echo "Hope you enjoyed the sound of music"
+      echo "Hope you enjoyed your week!"
       exit 0
       ;;
-   *) 
-      echo "Not a note"
+   *)
+      echo "Not a day."
       ;;
 esac
 
 done
 
-# exercise: Change the input question and case 
-# statement to another theme. 
+# exercise: Change the input question and case
+# statement to another theme.
