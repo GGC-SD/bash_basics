@@ -24,11 +24,16 @@ done
 # using loops and if statements.
 
 echo "Let's sing a milk song"
+HEAD
 echo "How many buckets of milk"
+=======
+echo "How many barrels of milk"
+ AlexPearce
 read count
 
 while [ $count -ge 0 ]; do
   if [ $count -ge 2 ]; then
+HEAD
       echo "$count buckets of milk in the barn, $count buckets of milk"
       echo "Grab one, pass it around"
   elif [ $count -eq 1 ]; then
@@ -36,6 +41,15 @@ while [ $count -ge 0 ]; do
       echo "grab one, pass it around"
   else
       echo "no more buckets of milk in the barn (the cows are tired)"
+=======
+      echo "$count barrells of milk in the barn, $count barrells of milk"
+      echo "grab one, pass it around"
+  elif [ $count -eq 1 ]; then
+      echo "$count barrells of milk in the barn, $count barrells of milk"
+      echo "grab one, pass it around"
+  else
+      echo "no mor ebarrells of milk in the barn (the cows are tired)"
+ AlexPearce
   fi
   
   # the following statement is equivalent to: let "count=count-1"
