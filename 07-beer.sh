@@ -23,23 +23,22 @@ done
 # exercise: implement another counting song (such as 12 days of Christmas) 
 # using loops and if statements.
 
-echo "Now we sing about monkeys jumping on the bed"
-echo "How many monkeys?"
+echo "Let's sing a milk song"
+echo "How many barrels of milk"
 read count
 
 while [ $count -ge 0 ]; do
-	if [ $count -ge 2 ]; then
-		echo "$count little monkeys jumping on the bed"
-		echo "one fell off and bumped his head"
-		echo "Moma called the doctor and the doctor said"
-		echo "No more monkeys jumping on the bed!"
-	else
-		echo "$count little monkey jumping on the bed"
-		echo "He fell off and bumped his head"
-		echo "Moma called the doctor and the doctor said"
-		echo "No more monkeys jumping on the bed!"
-	fi
-	
-	((count = count - 1))
-	
+  if [ $count -ge 2 ]; then
+      echo "$count barrells of milk in the barn, $count barrells of milk"
+      echo "grab one, pass it around"
+  elif [ $count -eq 1 ]; then
+      echo "$count barrells of milk in the barn, $count barrells of milk"
+      echo "grab one, pass it around"
+  else
+      echo "no mor ebarrells of milk in the barn (the cows are tired)"
+  fi
+  
+  # the following statement is equivalent to: let "count=count-1"
+  ((count = count - 1))
+
 done
