@@ -12,5 +12,15 @@ fi
 #  here are some other arithemetic comparison operators
 # -eq -ne -gt -ge -lt -le
 
-# exercise: write a script that prints whether it is 
+# exercise: write a script that prints whether it is
 # morning or not
+
+#!/bin/bash
+
+hour=$(date +%H)
+
+if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
+    echo "It's morning!"
+else
+    echo "It's not morning."
+fi
