@@ -15,6 +15,7 @@ fi
 # exercise: write a script that prints whether it is
 # morning or not
 
+<<<<<<< HEAD
 #!/bin/bash
 
 hour=$(date +%H)
@@ -23,4 +24,14 @@ if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
     echo "It's morning!"
 else
     echo "It's not morning."
+=======
+# Get the current hour in 24-hour format
+hour=$(date +%H)
+
+# Check if the hour is in the morning (6 AM to 12 PM)
+if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
+    echo "Good morning!"
+else
+    echo "It's not morning right now."
+>>>>>>> RichardPark
 fi
