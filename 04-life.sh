@@ -12,5 +12,15 @@ fi
 #  here are some other arithemetic comparison operators
 # -eq -ne -gt -ge -lt -le
 
-# exercise: write a script that prints whether it is 
+# exercise: write a script that prints whether it is
 # morning or not
+
+# Get the current hour in 24-hour format
+hour=$(date +%H)
+
+# Check if the hour is in the morning (6 AM to 12 PM)
+if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
+    echo "Good morning!"
+else
+    echo "It's not morning right now."
+fi
