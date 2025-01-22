@@ -14,13 +14,13 @@ while [ $count -ge 0 ]; do
   else
       echo "no more bottles of beer on the wall"
   fi
-  
+
   # the following statement is equivalent to: let "count=count-1"
   ((count = count - 1))
 
 done
 
-# exercise: implement another counting song (such as 12 days of Christmas) 
+# exercise: implement another counting song (such as 12 days of Christmas)
 # using loops and if statements.
 
 echo "Now we sing about monkeys jumping on the bed"
@@ -39,7 +39,20 @@ while [ $count -ge 0 ]; do
 		echo "Moma called the doctor and the doctor said"
 		echo "No more monkeys jumping on the bed!"
 	fi
-	
+
+  while [ $count -ge 0 ]; do
+  	if [ $count -ge 2 ]; then
+  		echo "$count little monkeys jumping on the bed"
+  		echo "one fell off and bumped his head"
+  		echo "Moma called the doctor and the doctor said"
+  		echo "No more monkeys jumping on the floor!"
+  	else
+  		echo "$count little monkey jumping on the bed"
+  		echo "Some fell off and bumped his head"
+  		echo "Moma called the doctor and the doctor said"
+  		echo "No more monkeys jumping on the floor!"
+  	fi
+
 	((count = count - 1))
-	
+
 done
