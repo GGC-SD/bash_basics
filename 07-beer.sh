@@ -23,7 +23,7 @@ done
 # exercise: implement another counting song (such as 12 days of Christmas)
 # using loops and if statements.
 
-echo "Now we sing about monkeys jumping on the bed"
+echo "Now we talk loud about monkeys jumping on the bed"
 echo "How many monkeys?"
 read count
 
