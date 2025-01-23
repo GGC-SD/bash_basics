@@ -10,25 +10,25 @@ while [ true ]; do
 case $Type in
    # each case matches a pattern
    Grass|grass)
-      echo "Correct"
-	  echo "Bye"
-	  exit 0
-      ;;   
-   Fire|fire)
-      echo "Wrong"
-      ;;
-   Water|water)
-      echo "Wrong"
-      ;;
-   Dragon|dragon)
-      echo "Wrong"
-      ;;
-   Unknown|unknown)
-      echo "bye"
-      exit 0
-      ;;
+	echo "Correct"
+	echo "Bye"
+	exit 0
+	;;
+	Fire|fire)
+		echo "Wrong"
+	;;
+	Water|Water)
+		echo "Wrong"
+	;;
+	Dragon|dragon)
+		echo "Wrong"
+	;;
+	Unknown|unknown)
+		echo "Bye"
+		exit 0
+	;;
    *) 
-      echo "Not a type listed"
+      echo "Not a type"
       ;;
 esac
 
