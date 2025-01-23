@@ -3,7 +3,6 @@ echo "Jacob Groover"
 echo "Hello, welcome to Jacob's RNG guessing game"
 echo "Please choose a number between 1 and 40"
 RANGE=40
-#rand=0
 rand=$RANDOM
 let "rand %= $RANGE"
 read input
@@ -24,3 +23,4 @@ while [[ $loop != q ]]; do
 		read input
 	fi
 done
+
