@@ -4,37 +4,31 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+   echo "What type of pokemon is Bulbasaur"
+   read -p "Fire Water Grass Dragon? (unknown to end) > " Type
 
-case $note in
+case $Type in
    # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
+   Grass|grass)
+      echo "Correct"
+	  echo "Bye"
+	  exit 0
       ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+   Fire|fire)
+      echo "Wrong"
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   Water|water)
+      echo "Wrong"
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   Dragon|dragon)
+      echo "Wrong"
       ;;
-   so|So)
-      echo "So a note that follows fa"
-      ;;
-   la|La)
-      echo "La a note that follow so"
-      ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
-      ;;
-   q)
-      echo "Hope you enjoyed the sound of music"
+   Unknown|unknown)
+      echo "bye"
       exit 0
       ;;
    *) 
-      echo "Not a note"
+      echo "Not a type listed"
       ;;
 esac
 
