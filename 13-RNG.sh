@@ -1,9 +1,8 @@
 #!/bin/bash
-echo "Taisann Kham"
-echo "Hello, welcome to Taisann's RNG guessing game"
-echo "Please choose a number between 0 - 9"
-RANGE=10
-rand=0
+echo "Jacob Groover"
+echo "Hello, welcome to Jacob's RNG guessing game"
+echo "Please choose a number between 1 and 40"
+RANGE=40
 rand=$RANDOM
 let "rand %= $RANGE"
 read input
@@ -24,3 +23,4 @@ while [[ $loop != q ]]; do
 		read input
 	fi
 done
+
