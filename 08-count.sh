@@ -15,3 +15,14 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+for file in *.sh; do
+    echo "Searching for 'function' in $file..."
+
+    grep -n "function" "$file"
+   
+    if [ $? -eq 0 ]; then
+        echo "'function' found in $file"
+    else
+        echo "'function' not found in $file"
+    fi
+done
