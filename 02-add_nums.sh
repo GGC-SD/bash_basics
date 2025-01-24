@@ -15,3 +15,4 @@ echo "The sum is $sum"
 # number of pixels
 
 echo This is a new command
+echo This is DIFFERENT than before!
