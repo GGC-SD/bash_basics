@@ -1,21 +1,24 @@
 #!/bin/bash
 # read the name of the user and print hello
 
-echo "Hello! What is your name"
+echo "Hello! Please tell me your name:"
 read name
-echo "Welcome, $name"
+echo "Welcome to this script, $name"
 
-# single quotes prevent the expansion of the variable
-echo 'Your name was stored in $name'
+# Display the current date and time
+echo "Today's date and time is: $(date)"
 
-# exercise: write a script that asks the user for a 
-# filename and create an empty file named after it
-
-echo "Hey $name, What is your filename?"
+# Prompt the user for a filename and create an empty file
+echo "Hi $name, please enter a filename you'd like to create:"
 read filename
-echo "You want $filename"
-echo "Creating $filename ..."
+echo "You chose the filename: $filename"
+echo "Creating the file $filename..."
 touch $filename
-echo "$filename creted"
+echo "The file $filename has been created!"
+
+# List the directory contents
 ls
-echo "Bye,bye"
+
+# Say goodbye
+echo "Thank you for using this script, $name. Goodbye!"
+
