@@ -21,5 +21,5 @@ then
    echo "Horayyyy!! Today is the weekend. Enjoy yourself! Be ready for the next week."
 else 
    echo "Today is a weekday. Keep focus on your work."
-echo "Have a great day no matter what day it is."
+echo "Have a great day no matter what day it is.!always!! "
 fi
