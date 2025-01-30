@@ -3,7 +3,6 @@
 
 echo "Hello, lets find out how hot or cold your weather is!"
 echo "What is your temperature?"
-# shellcheck disable=SC2162
 read temperature
 
 if [ "$temperature" -lt 40 ]; then
