@@ -1,16 +1,10 @@
+echo "Hello, we are going to figure out if its morning where you are"
+echo "Please what hour is your time at. (pick between 1 - 24)"
+read time
 
-echo "What is the meaning of life?"
-read meaning
 
-
-if [ "$meaning" -eq 42 ]; then
-   echo "Yes!, That is the meaning of life!"
+if [ "$time" -le 12 ]; then
+   echo "Good Morning America!!!"
 else
-   echo "Awww... You don't know the meaning of life"
+   echo "Its not morning"
 fi
-
-#  here are some other arithemetic comparison operators
-# -eq -ne -gt -ge -lt -le
-
-# exercise: write a script that prints whether it is 
-# morning or not
