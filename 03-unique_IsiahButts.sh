@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Greet the user
-echo "Hello! Welcome to my unique Bash script!"
+echo "Greetings! Welcome to my unique Bash script!"
 
 # Ask the user how they're doing
 echo "Are you doing ok?"
