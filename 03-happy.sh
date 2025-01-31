@@ -9,6 +9,16 @@ else
    echo "Still Smile :)"
 fi
 
+#added new comand statement here
+echo "Have you done your Homework?"
+read answer
+
+if [ "$answer" = "yes" ]; then
+   echo "Good job!!"
+else
+   echo "Come on, get it done bro.)"
+fi
+
 # here are the other string comparison operators
 # != , -n (not an empty string) , -z (an empty string)
 
