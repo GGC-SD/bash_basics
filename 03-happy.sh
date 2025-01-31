@@ -16,7 +16,7 @@ fi
 # the weekend or not
 echo "Which day of a week is today?"
 read day
-if [[ ${day,,} == "saturday" ]] | [[ ${day,,} == "sunday" ]]
+if [[ "$day" == "saturday" || "$day" == "sunday" ]];
 then 
    echo "Horayyyy!! Today is the weekend. Enjoy yourself! Be ready for the next week."
 else 
