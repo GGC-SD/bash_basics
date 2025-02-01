@@ -14,3 +14,11 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+echo "Is it AM or PM?"
+read time
+
+if [ "$time" = "AM" ] || [ "$time" = "am" ]; then
+   echo "It is morning!"
+else
+   echo "It is not morning."
+fi
