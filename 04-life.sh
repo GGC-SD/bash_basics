@@ -22,3 +22,4 @@ if [ "$time" = "AM" ] || [ "$time" = "am" ]; then
 else
    echo "It is not morning."
 fi
+#Had to redo. Added this comment. I don't quite understand this.
