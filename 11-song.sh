@@ -1,10 +1,5 @@
 #!/bin/sh
 
-
-while [ true ]; do
-
-#!/bin/sh
-
 while [ true ]; do
 
    # Changed the prompt to ask about colors
@@ -37,11 +32,16 @@ case $color in
       exit 0
       ;;
    *) 
+
       echo "I don't know that color."
+
+      echo "That is not color."
+
       ;;
 esac
 
 done
+
 
 # exercise: Change the input question and case 
 # statement to another theme. 
