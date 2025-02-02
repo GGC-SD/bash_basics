@@ -27,3 +27,4 @@ else
 fi
 
 # I added a comment for step 6 for assignment 5b in Piazza
+# fixed conflict markers
