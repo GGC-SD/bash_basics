@@ -3,38 +3,41 @@
 
 while [ true ]; do
 
-   # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+#!/bin/sh
 
-case $note in
-   # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
+while [ true ]; do
+
+   # Changed the prompt to ask about colors
+   read -p "Enter a color (q to quit) > " color
+
+case $color in
+   red|Red)
+      echo "Red symbolizes passion and energy."
       ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+   blue|Blue)
+      echo "Blue represents calm and stability."
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   green|Green)
+      echo "Green stands for nature and growth."
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   yellow|Yellow)
+      echo "Yellow signifies happiness and optimism."
       ;;
-   so|So)
-      echo "So a note that follows fa"
+   purple|Purple)
+      echo "Purple is associated with royalty and wisdom."
       ;;
-   la|La)
-      echo "La a note that follow so"
+   black|Black)
+      echo "Black represents mystery and elegance."
       ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
+   white|White)
+      echo "White symbolizes purity and peace."
       ;;
    q)
-      echo "Hope you enjoyed the sound of music"
+      echo "Goodbye! Hope you learned something about colors."
       exit 0
       ;;
    *) 
-      echo "Not a note"
+      echo "I don't know that color."
       ;;
 esac
 
