@@ -17,9 +17,9 @@ fi
 
 echo "What hour of the day is it? (0-24h)"
 read hour
+
 if [ "$hour" -lt 12 ]; then
    echo "It's morning!"
 else
    echo "It's not morning anymore."
 fi
-
