@@ -1,24 +1,44 @@
 #!/bin/sh
 
-echo "You are happy?"
+# Ask if the user is happy
+echo "Are you happy? (yes/no)"
 read answer
 
-if [ "$answer" = "yes" ]; then
-   echo "Smile :)"
+if [ -z "$answer" ]; then
+   echo "You didn't enter anything! But still, Smile :)"
+elif [ "$answer" = "yes" ]; then
+   echo "That's great! Keep smiling! :)"
 else
-   echo "Still Smile :)"
+   echo "No worries! Things will get better! Still, Smile :)"
 fi
 
-# here are the other string comparison operators
-# != , -n (not an empty string) , -z (an empty string)
-
-# exercise: write a script that prints whether today is
-# the weekend or not
-echo "Which day of a week is today?"
+# Ask what day it is
+echo "Which day of the week is today?"
 read day
-if [[ ${day,,} == "saturday" ]] | [[ ${day,,} == "sunday" ]]
-then 
-   echo "Horayyyy!! Today is the weekend. Enjoy yourself! Be ready for the next week."
-else 
-   echo "Today is a weekday. Keep focus on your work."
+
+# Convert to lowercase for case-insensitive comparison
+day_lower=$(echo "$day" | tr '[:upper:]' '[:lower:]')
+
+if [ "$day_lower" = "saturday" ] || [ "$day_lower" = "sunday" ]; then
+   echo "Hooray! It's the weekend. Enjoy and recharge!"
+else
+   echo "It's a weekday. Stay focused and productive!"
 fi
+
+# Additional motivation based on the day
+case "$day_lower" in
+   monday)
+      echo "New week, new opportunities! Let's go!"
+      ;;
+   friday)
+      echo "Almost there! Finish strong!"
+      ;;
+   saturday | sunday)
+      echo "Make the most of your weekend!"
+      ;;
+   *)
+      echo "Keep pushing through!"
+      ;;
+esac
+
+echo "Have a fantastic day! 😊"
