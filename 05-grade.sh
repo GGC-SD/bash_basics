@@ -10,7 +10,7 @@ if [ $grade -ge 90 ]; then
 elif [ $grade -ge 80 ]; then
    echo "You got a B. That's good."
 elif [ $grade -ge 70 ]; then
-   echo "You got a C. Not bad."
+   echo "You got a C. Work on it."
 else
    echo "Time to work on some extra credit assignments"
 fi
