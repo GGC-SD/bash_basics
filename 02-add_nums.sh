@@ -22,3 +22,5 @@ read height
 total=$(( width + height))
 
 echo "The total is $total"
+
+echo "Making another change but this time in the parallel universe"
