@@ -1,8 +1,8 @@
 # exercise: implement another counting song (such as 12 days of Christmas)
 # using loops and if statements.
 
-echo "Now, let's count sheep to go to sleep."
-echo "How many sheep are we counting?"
+echo "Now, let's count sheep to go to sleep!"
+echo "How many sheep are there?"
 read number
 
 echo "Count the sheep!"
