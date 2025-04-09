@@ -14,3 +14,12 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+echo "Lets check whether it is morning or not!"
+echo "Input the hour in 24hr format."
+read time
+
+if [ "$time" -ge 6 ] && [ "$time" -lt 12 ]; then
+	echo "Good Morning!"
+else
+	echo "It is not morning."
+fi
