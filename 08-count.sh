@@ -15,3 +15,15 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+for file in *.sh; do
+    echo "Searching for 'echo' in $file..."
+    
+    grep -n "echo" "$file"
+    
+    if [ $? -eq 0 ]; then
+        echo "'echo' found in $file"
+    else
+        echo "'echo' not found in $file"
+    fi
+    
+done
