@@ -33,5 +33,10 @@ read height
 echo ""
 pixelTotal=$(( $width * $height ))
 echo "Your display has ${pixelTotal} pixels." 
+
 echo "This is Mohammed"
 date
+
+echo "This is Mohammed, and my first change on parallel branch"
+whoami
+
