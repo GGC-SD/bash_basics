@@ -22,3 +22,6 @@ then
 else 
    echo "Today is a weekday. Keep focus on your work."
 fi
+
+# Git Practice #2
+echo "Parallel universe version"
