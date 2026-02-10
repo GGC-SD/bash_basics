@@ -24,5 +24,5 @@ else
 fi
 
 # Git Practice #2
-echo "Master branch version"
+echo "Git Practice #2: merged version"
 
