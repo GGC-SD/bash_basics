@@ -22,3 +22,4 @@ then
 else 
    echo "Today is a weekday! Keep being productive!"
 fi
+
