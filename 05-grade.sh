@@ -20,6 +20,7 @@ fi
 # it's chilly if < 60, it's okay if < 70 and, it's hot for 
 # everything else
 
+
 echo "What temperature is it?"
 echo "Numbers only!"
 read temp
@@ -33,3 +34,6 @@ elif [ $temp -lt 70 ]; then
 else
     echo "It's hot"
 fi
+
+echo "script still works
+
