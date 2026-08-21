@@ -22,3 +22,4 @@ then
 else 
    echo "Today is a weekday. Stay productive!"
 fi
+echo "This is a master-only change"
