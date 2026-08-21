@@ -20,5 +20,5 @@ if [[ ${day,,} == "saturday" ]] | [[ ${day,,} == "sunday" ]]
 then 
    echo "Horayyyy!! Today is the weekend. Enjoy yourself! Be ready for the next week."
 else 
-   echo "Today is a weekday. Keep focus on your work."
+   echo "Parallel universe: This weekend is totally different!"
 fi
