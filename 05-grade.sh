@@ -32,8 +32,8 @@ elif [ $temp -lt 60 ]; then
 elif [ $temp -lt 70 ]; then
     echo "It's okay"
 else
-    echo "It's hot"
+    echo "It's hot!"
 fi
 
-echo "script still works
+echo "script still works"
 
