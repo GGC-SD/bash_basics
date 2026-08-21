@@ -18,8 +18,7 @@ echo "Which day of a week is today?"
 read day
 if [[ ${day,,} == "saturday" ]] | [[ ${day,,} == "sunday" ]]
 then 
-   echo "Weekend vibes! Relax and recharge"
+   echo "Weekend Vibes from the NEW UNIVERSE branch!"
 else 
-   echo "Today is a weekday. Stay productive!"
+   echo "Today is a weekday! Keep being productive!"
 fi
-echo "This is a master-only change"
