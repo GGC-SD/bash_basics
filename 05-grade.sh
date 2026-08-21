@@ -22,13 +22,13 @@ fi
 
 echo "Whats the temperature?"
 echo "Numbers only!"
-read temp
+read temperature
 
-if [ $temp -lt 40 ]; then
+if [ $temperature -lt 40 ]; then
     echo "It's cold"
-elif [ $temp -lt 60 ]; then
+elif [ $temperature -lt 60 ]; then
     echo "It's chilly"
-elif [ $temp -lt 70 ]; then
+elif [ $temperature -lt 70 ]; then
     echo "It's okay"
 else
     echo "It's hot"
