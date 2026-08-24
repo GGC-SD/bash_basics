@@ -2,7 +2,7 @@
 
 # look up ip addresses of various search engines
 
-servers="github.com youtube.com twitter.com reddit.com"
+servers="google.com amazon.com facebook.com"
 
 for server in $servers; do
     nslookup $server
@@ -14,7 +14,7 @@ done
 # traceroute, or nslookup with other options.
 
 for server in $servers; do
-    ping $server
+    nslookup -type=mx $server
     echo "----------------------------"
 done
 
