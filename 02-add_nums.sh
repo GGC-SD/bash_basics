@@ -32,4 +32,9 @@ read height
 
 echo ""
 pixelTotal=$(( $width * $height ))
-echo "Your display has ${pixelTotal} pixels." 
+echo "Your display resolution is ${pixelTotal} pixels."
+
+echo "Calculation completed on:"
+date
+
+# Merge conflict resolved successfully
