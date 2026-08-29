@@ -15,3 +15,9 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+
+echo "Counting echo lines:"
+for file in *.sh; do
+  count=`grep -c "echo" "$file"`
+  echo "$file has $count echo lines"
+done
