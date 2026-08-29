@@ -15,3 +15,8 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+
+echo "Scripts that contain echo:"
+for file in *.sh; do
+  grep -l "echo" "$file"
+done
