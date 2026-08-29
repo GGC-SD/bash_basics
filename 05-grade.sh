@@ -32,4 +32,5 @@ elif [ $temp -lt 70 ]; then
    echo "it's okay"
 else
    echo "it's hot"
+
 fi
