@@ -21,6 +21,7 @@ done
 echo "Now, let's sing 12 Days of Christmas."
 echo "How many days of Christmas do you want to sing?"
 read days
+
 if (( days > 12 )); then
     days=12
 fi
