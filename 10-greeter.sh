@@ -1,29 +1,27 @@
-#/bin/sh
+#!/bin/sh
 
 # function in bash
 
 function weekend_greet 
 {
-   echo "Enjoy the weekend! ${1}!"
+   echo "Enjoy the weekend, ${1}! Have fun with ${2}!"
 }
 
 function weekday_greet
 {
-   echo "Hope you are working hard, ${1}!"
+   echo "Hope you are working hard on ${2}, ${1}!"
 }
 
-
-echo "Please enter your name"
+echo "Please enter your name:"
 read name
 
-day=$(date | cut -d' ' -f1)  # you can use this form instead of backticks
+echo "Please enter what you are working on/doing:"
+read task
 
-if [ $day = "Sat" ] || [ $day = "Sun" ]; then
-   weekend_greet $name
+day=$(date | cut -d' ' -f1)
+
+if [ "$day" = "Sat" ] || [ "$day" = "Sun" ]; then
+   weekend_greet "$name" "$task"
 else
-   weekday_greet $name
+   weekday_greet "$name" "$task"
 fi
-
-# exercise: Add a second argument to the function 
-# and make it give a greeting based on the new 
-# argument.
