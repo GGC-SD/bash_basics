@@ -18,7 +18,7 @@ fi
 echo "What hour is it right now (0-23)?"
 read hour
 
-if [ "$hour" -ge 6 ] && [ "$hour" -lt 12 ]; then
+if [ "$hour" -ge 6 ] && [ "$hour" -le 11 ]; then
    echo "It's morning!"
 else
    echo "Nope, not morning right now."
