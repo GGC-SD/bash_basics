@@ -13,5 +13,13 @@ for file in *.sh; do
     echo "$file has $lines lines"
 done
 
-# exercise: Loop over some type of files and use the 
+# exercise: Loop over some type of files and use the
 # "grep" UNIX command to find snippets of strings in them.
+
+echo "Combined echo AND read search"
+# Now searches for both echo and read in files
+for file in *.sh; do
+    echo "Checking $file"
+    grep "echo" "$file"
+    grep "read" "$file"
+done
