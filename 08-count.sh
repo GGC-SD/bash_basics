@@ -15,3 +15,10 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+
+echo "Alternate Universe"
+# Same thing as last time, but searching for read instead of echo
+for file in *.sh; do
+    echo "Checking $file"
+    grep "read" "$file"
+done
