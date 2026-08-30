@@ -17,4 +17,3 @@ for server in $servers; do
     tracert $server
     echo "--------------------------"
 done
-
