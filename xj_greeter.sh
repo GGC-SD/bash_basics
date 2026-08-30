@@ -1,21 +1,21 @@
 #!/bin/sh
 
-# Functions accepting two arguments: $1 = name, $2 = activity/task
+# Resolved greeting script accepting two arguments ($1 = name, $2 = activity/task)
 
 function weekend_greet 
 {
-   echo "Enjoy the weekend, ${1}! Have fun with ${2}!"
+   echo "Weekend mode active! Time to relax, ${1}, especially after working hard on ${2}!"
 }
 
 function weekday_greet
 {
-   echo "Hope you are working hard on ${2}, ${1}!"
+   echo "Keep crushing your goals with ${2}, ${1}!"
 }
 
-echo "Please enter your name:"
+echo "Please enter your full name:"
 read name
 
-echo "Please enter what you are working on/doing:"
+echo "Please enter what you are working on/doing today:"
 read task
 
 day=$(date | cut -d' ' -f1)
