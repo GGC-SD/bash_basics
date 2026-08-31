@@ -15,3 +15,13 @@ done
 
 # exercise: Loop over some type of files and use the 
 # "grep" UNIX command to find snippets of strings in them.
+
+echo "Shell scripts containing exercise comments:"
+for file in *.sh; do
+    grep -H "exercise" "$file"
+done
+
+echo "README lines that mention Git:"
+for file in *.md; do
+    grep -Hi "git" "$file"
+done
