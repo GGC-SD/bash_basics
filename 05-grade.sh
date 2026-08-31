@@ -14,6 +14,18 @@ elif [ $grade -ge 70 ]; then
 else
    echo "Time to work on some extra credit assignments"
 fi
+echo "What is the temperature?"
+read temp
+
+if [ $temp -lt 40 ]; then
+    echo "It's cold"
+elif [ $temp -lt 60 ]; then
+    echo "It's chilly"
+elif [ $temp -lt 70 ]; then
+    echo "It's okay"
+else
+    echo "It's hot"
+fi
 
 # exercise: write a script (that utilizes weather-util) 
 # that prints "it's cold" if the temperature is < 40
