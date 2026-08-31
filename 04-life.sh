@@ -15,8 +15,8 @@ read meaning
 # exercise: write a script that prints whether it is 
 # morning or not
 
-if [ "$meaning" == "morning" ]; then
+if [ "$meaning" == "mourning" ]; then
 	echo "Yes!, That is the meaning of life!"
-else
+else 
 	echo "Awww... You don't know the meaning of life"
 fi
