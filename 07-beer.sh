@@ -31,15 +31,29 @@ while [ $count -ge 0 ]; do
 	if [ $count -ge 2 ]; then
 		echo "$count little monkeys jumping on the bed"
 		echo "one fell off and bumped his head"
-		echo "Moma called the doctor and the doctor said"
+		echo "Mama called the doctor and the doctor said"
 		echo "No more monkeys jumping on the bed!"
 	else
 		echo "$count little monkey jumping on the bed"
 		echo "He fell off and bumped his head"
-		echo "Moma called the doctor and the doctor said"
+		echo "Mama called the doctor and the doctor said"
 		echo "No more monkeys jumping on the bed!"
 	fi
 	
 	((count = count - 1))
 	
+done
+
+echo "Now we sing Hickory Dickory Dock"
+echo "How many hours?"
+read count
+
+i=1
+while [ $i -le $count ]; do
+	echo "Hickory Dickory Dock"
+	echo "The mouse ran up the clock"
+	echo "The clock struck $i"
+	echo "The mouse ran down"
+	echo "Hickory Dickory Dock"
+	((i++))
 done
