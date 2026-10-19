@@ -19,3 +19,22 @@ fi
 # that prints "it's cold" if the temperature is < 40
 # it's chilly if < 60, it's okay if < 70 and, it's hot for 
 # everything else
+
+if command -v weather-util >/dev/null 2>&1; then
+   echo "Which weather station ID (e.g. KATL)?"
+   read station
+   temp=$(weather-util "$station" --headers=Temperature -q | sed -n 's/.*: *\([-0-9.]*\) F.*/\1/p' | cut -d. -f1)
+else
+   echo "weather-util not found. What is the temperature (F)?"
+   read temp
+fi
+
+if [ "$temp" -lt 40 ]; then
+   echo "It's cold"
+elif [ "$temp" -lt 60 ]; then
+   echo "It's chilly"
+elif [ "$temp" -lt 70 ]; then
+   echo "It's okay"
+else
+   echo "It's hot"
+fi
